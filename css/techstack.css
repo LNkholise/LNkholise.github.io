@@ -1,0 +1,97 @@
+/* tech stack section */
+.panel {
+            background: linear-gradient(135deg, #000000, #000000);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            color: #f0f0f0;
+        }
+        
+.poem {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+.poem-line {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+
+        }
+
+        
+.paragraph {
+            margin-top: 3rem;
+            font-weight: 300;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Tech Stack Icons */
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            opacity: 0;
+            animation: fadeIn 1s ease 3.5s forwards;
+        }
+        
+        .tech-icon {
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+        }
+        
+        .tech-icon:hover {
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Behind content */
+        }
+
+        .lets-talk {
+            font-size: 5.5rem; 
+            font-weight: 900; 
+            display: flex; 
+            justify-content: center; 
+            margin-right: 50px; 
+            color: red;
+          }
+
+      @media (max-width: 640px) {
+            .tech-icon {
+              font-size: 0.6rem;
+            }
+
+            .tech-stack {
+              gap: 1.0rem;
+            }
+
+            .lets-talk {
+              font-size: 2.5rem;
+            }
+        }
