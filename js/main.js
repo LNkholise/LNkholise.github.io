@@ -12,8 +12,8 @@
     const copyTooltip = document.querySelector(".copy-tooltip");
 
     const PANEL_COUNT = panels.length;
-    const SMOOTH_FACTOR = 0.07;
-    const WHEEL_SENSITIVITY = 1.2;
+    const SMOOTH_FACTOR = 0.09;
+    const WHEEL_SENSITIVITY = 2.8;
     const MENU_COLLAPSED_WIDTH = 60;
     const MENU_EXPANDED_WIDTH = 220;
 
